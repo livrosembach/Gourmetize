@@ -1,0 +1,26 @@
+header{
+    width: 100%;
+    height: 7vh;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    height: 100%;
+}
+
+.menuItems {
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.menuItems ul{
+    width: 100%;
+}
