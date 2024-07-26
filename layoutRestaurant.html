@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\layoutRestaurant.css">
+    <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
+    <title>Gourmetize</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="imagens/logo_goumetize.jpeg" id="logo" alt="logo">
+            <nav class="menuItems">
+                <ul class="menuItems">
+                    <li><a href="#" class="menuNav">Menu</a></li>
+                    <li><a href="restaurants.html" class="menuNav">Restaurantes</a></li>
+                    <li><a href="#" class="menuNav">Menu</a></li>
+                    <li><a href="#" class="menuNav">Menu</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <a href="#"><i class="fa-solid fa-magnifying-glass mainColor"></i>search</a>
+            </div>
+            <div class="perfil">
+                <a href="#"><i class="fa-solid fa-arrow-right-to-bracket mainColor"></i>login</a>
+            </div>
+        </div>
+    </header>
+    <div class="center imgOutback">
+        <img src="imagens/outback.png" alt="imagem do restaurante outback" id="imagemOutback">
+    </div>
+    <div class="addressFavorites">
+        <div class="titleOutback">
+            <h5 class="mainColor">Outback - Steakhouse</h5>
+            <img src="imagens/aval-outback.png" alt="A avaliação do outback é 4,5 estrelas">
+        </div>
+        <div class="address">
+            <div class="addressGroup">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="addressGroup">
+                <p>Av. Visconde de Guarapuava , 322</p>
+            </div>
+            <button type="button" onclick="">Cardápio</button>
+        </div>
+        <div class="favoriteGroup">
+            <i class="fa-regular fa-heart"></i>
+            <p> Adicionar aos Favoritos</p>
+        </div>
+    </div>
+    <div class="informations">
+        <div class="infoGroups">
+            <h4>Fila de Espera</h4>
+            <span>tempo de espera estimado : 30min</span>
+            <ol>
+                <li>Nome1</li>
+                <li>Nome2</li>
+                <li>Nome3</li>
+                <li>Nome4</li>
+                <li>Nome5</li>
+            </ol>
+            <button type="button">Entrar na Lista</button>
+        </div>
+        <div class="infoGroups">
+            <h4>Reserva</h4>
+            <form>
+                <div class="formReservation">
+                    <label class="day" for="day">Dia:</label>
+                    <input type="date" id="day" name="day" required>
+                </div>
+                <div class="formReservation">
+                    <label class="time" for="time">Horário:</label>
+                    <input type="time" id="time" name="time" required min="11:00" max="21:00">
+                </div>
+                <div class="formReservation">
+                    <label class="people" for="people">Quantidade de Pessoas:</label>
+                    <input type="number" id="people" name="people" required min="5">
+                </div>
+                <button type="submit" id="available">Ver Disponibilidade</button>
+            </form>
+        </div>
+        <div class="infoGroups">
+            <h4>Estacionamento</h4>
+            <p>O restaurante possui estacionamento próprio e
+                gratuito para clientes.</p>
+        </div>
+        <div class="infoGroups">
+            <h4>Horário de Funcionamento</h4>
+            <p>Segunda à Quinta: 12:00 - 22:00<br>
+                Sexta e Sábado: 13:00 - 23:00<br>
+                Domingo: 13:00 - 21:00</p>
+        </div>
+    </div>
+    <div class="center marginRating">
+        <div class="containerRatings">
+            <div id="titleRating">
+                <h3 class="mainFont mainColor">Avaliações</h3>
+                <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+            </div>
+            <div class="ratings">
+                <div class="rating">
+                    <div class="userImg">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="infoRating">
+                        <p class="nameRating">Nome Sobrenome</p>
+                        <span>Data: 22/03/2022</span>
+                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="userImg">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="infoRating">
+                        <p class="nameRating">Nome Sobrenome</p>
+                        <span>Data: 22/03/2022</span>
+                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="userImg">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="infoRating">
+                        <p class="nameRating">Nome Sobrenome</p>
+                        <span>Data: 22/03/2022</span>
+                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
+            class="fa fa-comments"></i></a>
+</body>
+
+</html>

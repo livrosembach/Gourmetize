@@ -1,0 +1,14 @@
+.supportButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #B52b19;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.supportButton:hover {
+    background-color: #922a15;
+}

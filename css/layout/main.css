@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainColor {
+    color: #b52b19;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainFont {
+    font-family: 'Orelega One', serif;
+    font-weight: 400;
+}
