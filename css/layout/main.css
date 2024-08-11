@@ -8,6 +8,10 @@
     color: #b52b19;
 }
 
+.secondColor {
+    color: #994e1b;
+}
+
 .center {
     width: 100%;
     display: flex;
