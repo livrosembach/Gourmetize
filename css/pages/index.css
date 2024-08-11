@@ -1,7 +1,7 @@
-@import url('layout/header.css');
-@import url('componets/support.css');
-@import url('componets/button.css');
-@import url('layout/main.css');
+@import url('../layout/header.css');
+@import url('../componets/support.css');
+@import url('../componets/button.css');
+@import url('../layout/main.css');
 
 .textHomepage {
     height: 90vh;
@@ -26,13 +26,6 @@ h1,p{
 
 .marginLeft{
     margin-left: 8px;
-}
-
-.italic{
-    font-style: italic;
-}
-.underline{
-    text-decoration: underline;
 }
 
 .line2 p{

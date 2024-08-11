@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orelega+One&display=swap');
-@import url(componets/support.css);
-@import url(layout/header.css);
-@import url(layout/main.css);
-@import url(componets/button.css);
+@import url('../componets/support.css');
+@import url('../layout/header.css');
+@import url('../layout/main.css');
+@import url('../componets/button.css');
 
 .imgOutback {
     width: 100%;
@@ -49,12 +49,6 @@ h5 {
     margin-right: 10px;
 }
 
-
-.address button:hover {
-    background-color: #000;
-    cursor: pointer;
-}
-
 .favoriteGroup {
     display: flex;
     align-items: center;
@@ -79,13 +73,13 @@ h5 {
 .infoGroups {
     height: 200px;
     width: 230px;
-    border: solid 2px #B52b19;
+    box-shadow: 3px 3px 3px 3px rgb(153,78,27, 0.2);
+    border: 2px solid rgb(153,78,27, 0.1);
     border-radius: 10px;
 }
 
 h4 {
-    color: #B52b19;
-    font-family: "Orelega One", serif;
+    font-weight: 600;
     font-size: 20px;
     margin-left: 10px;
     margin-top: 10px;
@@ -93,14 +87,12 @@ h4 {
 }
 
 .infoGroups p {
-    color: #B52b19;
     margin-left: 10px;
     align-items: center;
     margin-top: 10px;
 }
 
 .infoGroups span {
-    color: #B52b19;
     margin-left: 10px;
     display: block;
     margin-top: -20px;
@@ -108,23 +100,23 @@ h4 {
 
 .infoGroups ol {
     margin-left: 25px;
+    font-size: 13px;
 }
 
 .infoGroups button {
     margin-left: 10px;
-    font-family: 'Orelega One', serif;
-    font-size: 15px;
     width: 150px;
 }
 
 .infoGroups form {
     margin-left: 10px;
+    font-size: 13px;
 }
 
 .infoGroups input {
     width: 100px;
-    margin-bottom: 15px;
-    border: solid 1px #B52b19;
+    margin-bottom: 12px;
+    border: solid 1px #994e1b;
 }
 
 .infoGroups #people {
@@ -133,12 +125,8 @@ h4 {
 
 .infoGroups #available {
     margin-left: 22px;
-    margin-top: 2px;
 }
 
-.infoGroups button:hover {
-    background-color: #000;
-}
 
 .marginRating {
     margin-top: 30px;
@@ -148,7 +136,8 @@ h4 {
     width: 1020px;
     min-width: 80%;
     height: 300px;
-    border: solid 2px #B52b19;
+    box-shadow: 3px 3px 3px 3px rgb(153,78,27, 0.2);
+    border: 2px solid rgb(153,78,27, 0.1);
     border-radius: 10px;
 }
 

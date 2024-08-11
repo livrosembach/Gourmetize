@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\layoutRestaurant.css">
+    <link rel="stylesheet" href="..\css\pages\layoutRestaurant.css">
     <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
     <title>Gourmetize</title>
 
@@ -13,17 +13,18 @@
 <body>
     <header>
         <div class="menu">
-            <img src="imagens/logo_goumetize.jpeg" id="logo" alt="logo">
+            <img src="../imagens/logo_goumetize.jpeg" id="logo" alt="logo">
             <nav class="menuItems">
                 <ul class="menuItems">
-                    <li><a href="index.html" class="menuNav secondColor">Início</a></li>
-                    <li><a href="restaurants.html" class="menuNav secondColor">Restaurantes</a></li>
-                    <li><a href="#" class="menuNav secondColor">Menu</a></li>
-                    <li><a href="#" class="menuNav secondColor">Menu</a></li>
+                    <li><a href="index.html" class="menuNav secondColor secondFont">Início</a></li>
+                    <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
+                    <li><a href="#" class="menuNav secondColor secondFont">Menu</a></li>
+                    <li><a href="#" class="menuNav secondColor secondFont">Sobre Nós</a></li>
                 </ul>
             </nav>
             <div class="search">
-                <a href="#"><i class="fa-solid fa-magnifying-glass mainColor"></i>search</a>
+                <input type="text" placeholder="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass secondColor"></i>
             </div>
             <div class="perfil">
                 <button type="button">Login</button>
@@ -31,12 +32,12 @@
         </div>
     </header>
     <div class="center imgOutback">
-        <img src="imagens/outback.png" alt="imagem do restaurante outback" id="imagemOutback">
+        <img src="../imagens/outback.png" alt="imagem do restaurante outback" id="imagemOutback">
     </div>
     <div class="addressFavorites">
         <div class="titleOutback">
             <h5 class="mainColor">Outback - Steakhouse</h5>
-            <img src="imagens/aval-outback.png" alt="A avaliação do outback é 4,5 estrelas">
+            <img src="../imagens/aval-outback.png" alt="A avaliação do outback é 4,5 estrelas">
         </div>
         <div class="address">
             <div class="addressGroup">
@@ -54,9 +55,9 @@
     </div>
     <div class="informations">
         <div class="infoGroups">
-            <h4>Fila de Espera</h4>
-            <span>tempo de espera estimado : 30min</span>
-            <ol>
+            <h4 class="mainFont mainColor">Fila de Espera</h4>
+            <span class="secondColor secondFont italic"> Tempo de espera estimado : 30min</span>
+            <ol class="secondColor secondFont">
                 <li>Nome1</li>
                 <li>Nome2</li>
                 <li>Nome3</li>
@@ -66,8 +67,8 @@
             <button type="button">Entrar na Lista</button>
         </div>
         <div class="infoGroups">
-            <h4>Reserva</h4>
-            <form>
+            <h4 class="mainFont mainColor">Reserva</h4>
+            <form class="secondColor secondFont">
                 <div class="formReservation">
                     <label class="day" for="day">Dia:</label>
                     <input type="date" id="day" name="day" required>
@@ -84,13 +85,13 @@
             </form>
         </div>
         <div class="infoGroups">
-            <h4>Estacionamento</h4>
-            <p>O restaurante possui estacionamento próprio e
+            <h4 class="mainFont mainColor">Estacionamento</h4>
+            <p class="secondColor secondFont">O restaurante possui estacionamento próprio e
                 gratuito para clientes.</p>
         </div>
         <div class="infoGroups">
-            <h4>Horário de Funcionamento</h4>
-            <p>Segunda à Quinta: 12:00 - 22:00<br>
+            <h4 class="mainFont mainColor">Horário de Funcionamento</h4>
+            <p class="secondColor secondFont">Segunda à Quinta: 12:00 - 22:00<br>
                 Sexta e Sábado: 13:00 - 23:00<br>
                 Domingo: 13:00 - 21:00</p>
         </div>
@@ -99,7 +100,7 @@
         <div class="containerRatings">
             <div id="titleRating">
                 <h3 class="mainFont mainColor">Avaliações</h3>
-                <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                <img src="../imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
             </div>
             <div class="ratings">
                 <div class="rating">
@@ -109,7 +110,7 @@
                     <div class="infoRating">
                         <p class="nameRating">Nome Sobrenome</p>
                         <span>Data: 22/03/2022</span>
-                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <img src="../imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
                         <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -123,7 +124,7 @@
                     <div class="infoRating">
                         <p class="nameRating">Nome Sobrenome</p>
                         <span>Data: 22/03/2022</span>
-                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <img src="../imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
                         <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -137,7 +138,7 @@
                     <div class="infoRating">
                         <p class="nameRating">Nome Sobrenome</p>
                         <span>Data: 22/03/2022</span>
-                        <img src="imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
+                        <img src="../imagens/aval-outback.png" alt="avaliação do restaurante é 4,5 estrelas">
                         <p class="textRating">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip

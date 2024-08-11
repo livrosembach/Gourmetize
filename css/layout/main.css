@@ -26,3 +26,14 @@
     font-family: 'Orelega One', serif;
     font-weight: 400;
 }
+
+.secondFont {
+    font-family: 'Roboto', sans-serif;
+}
+
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}

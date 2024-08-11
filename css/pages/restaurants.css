@@ -1,10 +1,11 @@
-@import url('layout/header.css');
-@import url('componets/support.css');
-@import url('layout/main.css');
-@import url('componets/button.css');
+@import url('../layout/header.css');
+@import url('../componets/support.css');
+@import url('../layout/main.css');
+@import url('../componets/button.css');
 
-hr {
-    border: 1px solid #b52b19;
+.titlePag{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .restaurants {
@@ -19,10 +20,16 @@ hr {
     margin-top: 5px;
     text-align: center;
     background-color: #ffffff;
-    height: 100%;
-    width: 30%;
+    height: 90%;
+    width: 23%;
     box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
+    border: 2px solid rgb(0, 0, 0, 0.1);
+}
 
+.restaurant:hover{
+    cursor: pointer;
+    border: 2px solid rgba(215, 173, 22, 0.2);
+    box-shadow: 0 0 5px rgba(215, 173, 22, 0.8);
 }
 
 .restaurant img {
@@ -32,10 +39,8 @@ hr {
 
 .restaurant .text a {
     font-size: 20px;
-    font-style: italic;
-    font-family: 'Orelega One', serif;
-    color: #B52b19;
     font-weight: 200;
+    color: #994e1b;
 }
 
 .restaurant p {
