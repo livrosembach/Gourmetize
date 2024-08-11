@@ -6,9 +6,8 @@
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
-    text-decoration: none;
 }
 
 .supportButton:hover {
-    background-color: #922a15;
+    background-color: #D7AD16;
 }

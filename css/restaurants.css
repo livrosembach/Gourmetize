@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orelega+One&display=swap');
 @import url('layout/header.css');
 @import url('componets/support.css');
 @import url('layout/main.css');
+@import url('componets/button.css');
 
 hr {
     border: 1px solid #b52b19;

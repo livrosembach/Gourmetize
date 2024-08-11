@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orelega+One&display=swap');
 @import url('layout/header.css');
 @import url('componets/support.css');
-@import url('componets/search.css');
+@import url('componets/button.css');
 @import url('layout/main.css');
 
 .textHomepage {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,7 +49,9 @@ input{
 }
 
 input:focus{
+    outline: none;
     border: 2px solid #D7AD16;
+    box-shadow: 0 0 5px rgba(215, 173, 22, 0.5);
 }
 
 .inputSearch i{
