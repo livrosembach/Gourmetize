@@ -26,6 +26,10 @@ header{
     width: 100%;
 }
 
+.menuItems ul li a{
+    text-decoration: none;
+}
+
 input{
     width: 120px;
     height: 25px;
