@@ -14,20 +14,17 @@
     <header>
         <div class="menu">
             <img src="../imagens/logo_goumetize.jpeg" id="logo" alt="logo">
-            <nav class="menuItems">
-                <ul class="menuItems">
+            <nav id="navBar" class="menuItems">
+                <ul class="ulItems">
                     <li><a href="index.html" class="menuNav secondColor secondFont">Home</a></li>
                     <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
                     <li><a href="#" class="menuNav secondColor secondFont">Menu</a></li>
                     <li><a href="aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
                 </ul>
             </nav>
-            <div class="search">
-                <input type="text" placeholder="Pesquisar">
-                <i class="fa-solid fa-magnifying-glass secondColor"></i>
-            </div>
-            <div class="perfil">
-                <button type="button">Login</button>
+            <div class="icons mainColor">
+                <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="location.href='login.html'"></i>
             </div>
         </div>
     </header>
@@ -151,6 +148,21 @@
     </div>
     <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
             class="fa fa-comments"></i></a>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const nav = document.getElementById("navBar");
+            const computedStyle = window.getComputedStyle(nav);
+            const display = computedStyle.display;
+
+            if (display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+
+        });
+    </script>
 </body>
 
 </html>

@@ -30,6 +30,14 @@ header{
     text-decoration: none;
 }
 
+.ulItems{
+    display: flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left: 15%;
+}
+
 input{
     width: 120px;
     height: 25px;
@@ -48,5 +56,47 @@ input:focus{
     position: relative;
     right: 30px;
     top: 1px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    cursor: pointer;
+}
+
+#menuButton{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #navBar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuItems ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #navBar li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: rgba(181, 43, 25,0.9);
+    }
+    #navBar a {
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+    }
+    #menuButton {
+        display: block;
+        cursor: pointer;
+    }
 }
 
