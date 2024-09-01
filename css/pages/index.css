@@ -22,6 +22,7 @@
 h1,p{
     font-family: 'Orelega One', serif;
     color: #994e1b;
+    font-weight: 500;
 }
 
 .marginLeft{
@@ -29,7 +30,7 @@ h1,p{
 }
 
 .line2 p{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input{

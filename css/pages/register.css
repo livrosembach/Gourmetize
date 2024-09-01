@@ -1,0 +1,28 @@
+@import url("login.css");
+
+.formGroup:has(input[type='date']) {
+   width: 75%;
+}
+
+
+.iconsRegistration{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.iconsRegistration button{
+    width: 20%;
+}
+
+.group{
+    display: none;
+    flex-direction: column;
+}
+
+
+.firstGroup{
+    display: flex;
+}
+
