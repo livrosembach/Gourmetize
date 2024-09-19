@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\pages\profile.css">
+    <title>Gourmetize</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="../imagens/logo_goumetize.jpeg" id="logo" alt="logo">
+            <nav id="navBar" class="menuItems">
+                <ul class="ulItems">
+                    <li><a href="index.html" class="menuNav secondColor secondFont">Home</a></li>
+                    <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
+                    <li><a href="#" class="menuNav secondColor secondFont">Menu</a></li>
+                    <li><a href="aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="icons mainColor">
+                <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="location.href='login.html'"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <i class="fa-solid fa-circle-user fa-2xl"></i>
+            <div class="name">
+                <p class="secondFont">Nome Completo</p>
+                <p class="secondFont">nome@email.com</p>
+            </div>
+        </div>
+        <div class="information">
+            <div class="infos">
+                <div class="info">
+                    <label>Nome:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Username:</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="info">
+                    <label>Data de Nascimento:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Telefone:</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="info">
+                    <label>Email:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>CPF</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="info">
+                    <label>Endereço:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Número</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Complemento</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label for="">CEP</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="info">
+                    <label>Senha</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
+            class="fa fa-comments"></i>
+    </a>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const nav = document.getElementById("navBar");
+            const computedStyle = window.getComputedStyle(nav);
+            const display = computedStyle.display;
+
+            if (display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+
+        });
+    </script>
+</body>
+
+</html>

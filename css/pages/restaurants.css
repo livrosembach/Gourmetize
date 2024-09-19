@@ -1,7 +1,7 @@
 @import url('../layout/header.css');
-@import url('../componets/support.css');
+@import url('../components/support.css');
 @import url('../layout/main.css');
-@import url('../componets/button.css');
+@import url('../components/button.css');
 
 .titlePag{
     margin-top: 2%;
@@ -11,8 +11,9 @@
 .restaurants {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     margin-bottom: 10px;
 }
 
@@ -20,7 +21,7 @@
     margin-top: 5px;
     text-align: center;
     background-color: #ffffff;
-    height: 90%;
+    height: auto;
     width: 23%;
     box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
     border: 2px solid rgb(0, 0, 0, 0.1);
@@ -65,4 +66,19 @@
     font-weight: bold;
     background-color: #c0ecb2;
     border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    .restaurant {
+        height: 60vh;
+        width: 45%;
+    }
+    
+}
+@media (max-width: 500px){
+    .restaurant {
+        height: 70vh;
+        width: 80%;
+    }
+    
 }

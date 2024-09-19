@@ -1,6 +1,6 @@
 @import url('../layout/header.css');
-@import url('../componets/support.css');
-@import url('../componets/button.css');
+@import url('../components/support.css');
+@import url('../components/button.css');
 @import url('../layout/main.css');
 
 body {
@@ -17,7 +17,7 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(153,78,27, 0.2);
+    box-shadow: 0 4px 8px rgb(153,78,27, 0.5);
 }
 
 h1, h2 {
