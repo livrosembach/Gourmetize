@@ -16,7 +16,8 @@
             <nav id="navBar" class="menuItems">
                 <ul class="ulItems">
                     <li><a href="index.html" class="menuNav secondColor secondFont secondColor">Home</a></li>
-                    <li><a href="restaurants.html" class="menuNav secondColor secondFont secondColor">Restaurantes</a></li>
+                    <li><a href="restaurants.html" class="menuNav secondColor secondFont secondColor">Restaurantes</a>
+                    </li>
                     <li><a href="#" class="menuNav secondColor secondFont secondColor">Menu</a></li>
                     <li><a href="aboutUs.html" class="menuNav secondColor secondFont secondColor">Sobre Nós</a></li>
                 </ul>
@@ -28,83 +29,95 @@
         </div>
     </header>
     <div class="content">
-    <aside>
-        <i class="fa-solid fa-circle-user mainColor"></i>
-            <i class="fa-solid fa-heart mainColor"></i>
-            <i class="fa-solid fa-star mainColor"></i>
-            <i class="fa-solid fa-ticket mainColor"></i>
-            <i class="fa-solid fa-clock-rotate-left mainColor"></i>
-            <i class="fa-solid fa-bell mainColor"></i>
-            <i class="fa-solid fa-share-from-square mainColor"></i>
-    </aside>
-    <main>
-        <div class="top">
-            <i class="fa-solid fa-circle-user fa-2xl"></i>
-            <div class="name">
-                <p class="secondFont secondColor">Nome Completo</p>
-                <p class="secondFont secondColor">nome@email.com</p>
-            </div>
-        </div>
-        <div class="information">
-            <div class="infos">
-                <div class="info">
-                    <label class="secondFont secondColor">Nome:</label class="secondFont secondColor">
-                    <input type="text">
+        <aside>
+            <div class="asideIcons">
+                <div class="selectIcon">
+                    <i class="fa-solid fa-circle-user mainColor" onclick="location.href='profile.html'"> </i>
                 </div>
-                <div class="info">
-                    <label class="secondFont secondColor">Username:</label class="secondFont secondColor">
-                    <input type="text">
+                <div class="selectIcon">
+                    <i class="fa-solid fa-heart mainColor" onclick="location.href='favorites.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-star mainColor" onclick="location.href='reviews.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-ticket mainColor" onclick="location.href='coupons.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-clock-rotate-left mainColor" onclick="location.href='history.html'"></i>
+                </div>
+                <div class="selectIcon"> <i class="fa-solid fa-bell mainColor" onclick="location.href='news.html'"></i>
                 </div>
             </div>
-            <div class="infos">
-                <div class="info">
-                    <label class="secondFont secondColor">Data de Nascimento:</label class="secondFont secondColor">
-                    <input type="text">
-                </div>
-                <div class="info">
-                    <label class="secondFont secondColor">Telefone:</label class="secondFont secondColor">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="infos">
-                <div class="info">
-                    <label class="secondFont secondColor">Email:</label class="secondFont secondColor">
-                    <input type="text">
-                </div>
-                <div class="info">
-                    <label class="secondFont secondColor">CPF</label class="secondFont secondColor">
-                    <input type="text">
+        </aside>
+        <main>
+            <div class="top">
+                <i class="fa-solid fa-circle-user fa-2xl"></i>
+                <div class="name">
+                    <p class="secondFont secondColor">Nome Completo</p>
+                    <p class="secondFont secondColor">nome@email.com</p>
                 </div>
             </div>
-            <div class="infos fourInfo">
-                <div class="info">
-                    <label class="secondFont secondColor">Endereço:</label class="secondFont secondColor">
-                    <input type="text">
+            <div class="information">
+                <div class="infos">
+                    <div class="info">
+                        <label class="secondFont secondColor">Nome:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor">Username:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
                 </div>
-                <div class="info">
-                    <label class="secondFont secondColor">Número</label class="secondFont secondColor">
-                    <input type="text">
+                <div class="infos">
+                    <div class="info">
+                        <label class="secondFont secondColor">Data de Nascimento:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor">Telefone:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
                 </div>
-                <div class="info">
-                    <label class="secondFont secondColor">Complemento</label class="secondFont secondColor">
-                    <input type="text">
+                <div class="infos">
+                    <div class="info">
+                        <label class="secondFont secondColor">Email:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor">CPF</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
                 </div>
-                <div class="info">
-                    <label class="secondFont secondColor" for="">CEP</label class="secondFont secondColor">
-                    <input type="text">
+                <div class="infos fourInfo">
+                    <div class="info">
+                        <label class="secondFont secondColor">Endereço:</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor">Número</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor">Complemento</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label class="secondFont secondColor" for="">CEP</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="infos editInfo">
+                    <div class="info">
+                        <label class="secondFont secondColor">Senha</label class="secondFont secondColor">
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <button type="button">Editar</button>
+                    </div>
                 </div>
             </div>
-            <div class="infos editInfo">
-                <div class="info">
-                    <label class="secondFont secondColor">Senha</label class="secondFont secondColor">
-                    <input type="text">
-                </div>
-                <div class="info">
-                    <button type="button">Editar</button>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
     </div>
     <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
             class="fa fa-comments"></i>

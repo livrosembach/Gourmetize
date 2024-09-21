@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\pages\reviews.css">
+    <title>Gourmetize</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="../imagens/logo_goumetize.jpeg" id="logo" alt="logo">
+            <nav id="navBar" class="menuItems">
+                <ul class="ulItems">
+                    <li><a href="index.html" class="menuNav secondColor secondFont secondColor">Home</a></li>
+                    <li><a href="restaurants.html" class="menuNav secondColor secondFont secondColor">Restaurantes</a>
+                    </li>
+                    <li><a href="#" class="menuNav secondColor secondFont secondColor">Menu</a></li>
+                    <li><a href="aboutUs.html" class="menuNav secondColor secondFont secondColor">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="icons mainColor">
+                <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="location.href='login.html'"></i>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <aside>
+            <div class="asideIcons">
+                <div class="selectIcon">
+                    <i class="fa-solid fa-circle-user mainColor" onclick="location.href='profile.html'"> </i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-heart mainColor" onclick="location.href='favorites.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-star mainColor" onclick="location.href='reviews.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-ticket mainColor"  onclick="location.href='coupons.html'"></i>
+                </div>
+                <div class="selectIcon">
+                    <i class="fa-solid fa-clock-rotate-left mainColor" onclick="location.href='history.html'"></i>
+                </div>
+                <div class="selectIcon"> <i class="fa-solid fa-bell mainColor" onclick="location.href='news.html'"></i>
+                </div>
+            </div>
+        </aside>
+        <main>
+           <div class="reviews">
+            <div class="review">
+                <div class="title">
+                    <p class="secondFont mainColor italic">Del Sol</p>
+                    <p>⭐⭐⭐⭐</p>
+                </div>
+                <div class="text secondFont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore harum quisquam sunt perferendis possimus eius doloribus sint et nesciunt, vitae hic aliquid iste molestiae, impedit, repellat ducimus corporis earum.
+                </div>
+                <p class="secondFont italic">Data: 22/09/2023</p>
+            </div>
+            <div class="review">
+                <div class="title">
+                    <p class="secondFont mainColor italic">Casa Roma</p>
+                    <p>⭐⭐⭐</p>
+                </div>
+                <div class="text secondFont secondFont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore harum quisquam sunt perferendis possimus eius doloribus sint et nesciunt, vitae hic aliquid iste molestiae, impedit, repellat ducimus corporis earum.
+                </div>
+                <p class="secondFont italic">Data: 22/09/2023</p>
+            </div>
+            <div class="review">
+                <div class="title">
+                    <p class="secondFont mainColor italic">Bodega do Porto</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="text secondFont">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore harum quisquam sunt perferendis possimus eius doloribus sint et nesciunt, vitae hic aliquid iste molestiae, impedit, repellat ducimus corporis
+                </div>
+                <p class="secondFont italic">Data: 22/09/2023</p>
+            </div>
+           </div>
+        </main>
+    </div>
+    <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
+            class="fa fa-comments"></i>
+    </a>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const nav = document.getElementById("navBar");
+            const computedStyle = window.getComputedStyle(nav);
+            const display = computedStyle.display;
+
+            if (display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+
+        });
+    </script>
+</body>
+
+</html>
