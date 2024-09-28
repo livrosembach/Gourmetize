@@ -1,5 +1,5 @@
 # Gourmetize
- Projeto da Faculdade para a disciplina de Experiencia Criativa.
+##### This is an updated version of what was the final project for the Creative Experience course.
+Gourmetize's mission is to connect you to a wide variety of gastronomic options, from the most sophisticated bistros to cozy local spots, with price ranges to suit all budgets. Explore culinary diversity and discover new flavors with Gourmetize, your reliable guide to an unforgettable gastronomic experience.
 
- 
- Nesse momento sendo melhorado em relação a versão apresentada na matéria.
+#### →This website was implemented using HTML, CSS, and JavaScript.
