@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="..\css\pages\profile.css">
-    <title>Gourmetize</title>
+    <link rel="shortcut icon" type="image/png" href="../imagens/shortcut_icon.ico">
+<title>Gourmetize</title>
+<title>Gourmetize</title>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             </nav>
             <div class="icons mainColor">
                 <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
-                <i class="fa-solid fa-circle-user colorIcons" onclick="location.href='login.html'"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="checkRegistrationFormSubmission()"></i></i>
             </div>
         </div>
     </header>
@@ -54,63 +56,63 @@
             <div class="top">
                 <i class="fa-solid fa-circle-user fa-2xl"></i>
                 <div class="name">
-                    <p class="secondFont secondColor">Nome Completo</p>
-                    <p class="secondFont secondColor">nome@email.com</p>
+                    <p class="secondFont secondColor" id="fullName"></p>
+                    <p class="secondFont secondColor" id="emailDisplay"></p>
                 </div>
             </div>
             <div class="information">
                 <div class="infos">
                     <div class="info">
                         <label class="secondFont secondColor">Nome:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="nameP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor">Username:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="usernameP" readonly>
                     </div>
                 </div>
                 <div class="infos">
                     <div class="info">
                         <label class="secondFont secondColor">Data de Nascimento:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="birthdateP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor">Telefone:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="phoneP" readonly>
                     </div>
                 </div>
                 <div class="infos">
                     <div class="info">
                         <label class="secondFont secondColor">Email:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="emailP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor">CPF</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="cpfP" readonly>
                     </div>
                 </div>
                 <div class="infos fourInfo">
                     <div class="info">
                         <label class="secondFont secondColor">Endereço:</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="addressP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor">Número</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="numberP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor">Complemento</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="complementP" readonly>
                     </div>
                     <div class="info">
                         <label class="secondFont secondColor" for="">CEP</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="text" id="cepP" readonly>
                     </div>
                 </div>
                 <div class="infos editInfo">
                     <div class="info">
                         <label class="secondFont secondColor">Senha</label class="secondFont secondColor">
-                        <input type="text">
+                        <input type="password" id="passwordP" readonly>
                     </div>
                     <div class="info">
                         <button type="button">Editar</button>
@@ -136,7 +138,38 @@
             }
 
         });
+function checkRegistrationFormSubmission() {
+            const userData = JSON.parse(localStorage.getItem("userData"));
+            if(userData){
+                window.location.href = 'profile.html';
+            }
+            else{
+                window.location.href = 'login.html'
+            }
+        }
+
+        // Retrieve user data from localStorage and populate the form fields
+        document.addEventListener("DOMContentLoaded", function () {
+            const userData = JSON.parse(localStorage.getItem("userData"));
+
+            if (userData) {
+                document.getElementById("fullName").textContent = userData.name;
+                document.getElementById("emailDisplay").textContent = userData.email;
+                document.getElementById("nameP").value = userData.name;
+                document.getElementById("usernameP").value = userData.username;
+                document.getElementById("birthdateP").value = userData.birthdate;
+                document.getElementById("phoneP").value = userData.phone;
+                document.getElementById("emailP").value = userData.email;
+                document.getElementById("cpfP").value = userData.cpf;
+                document.getElementById("addressP").value = userData.address;
+                document.getElementById("numberP").value = userData.houseNum;
+                document.getElementById("complementP").value = userData.complement;
+                document.getElementById("cepP").value = userData.cep;
+                document.getElementById("passwordP").value = userData.password;
+            }
+        });
     </script>
+    <script src="registration.js"></script>
 </body>
 
 </html>

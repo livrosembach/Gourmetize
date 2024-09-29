@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\css\pages\restaurants.css">
     <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
-    <title>Gourmetize</title>
+    <link rel="shortcut icon" type="image/png" href="../imagens/shortcut_icon.ico">
+<title>Gourmetize</title>
+<title>Gourmetize</title>
 </head>
 
 <body>
@@ -17,13 +19,13 @@
                 <ul class="ulItems">
                     <li><a href="index.html" class="menuNav secondColor secondFont">Home</a></li>
                     <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
-                    <li><a href="#" class="menuNav secondColor secondFont">Menu</a></li>
+                    
                     <li><a href="aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
                 </ul>
             </nav>
             <div class="icons mainColor">
                <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
-                <i class="fa-solid fa-circle-user colorIcons" onclick="location.href='login.html'"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="checkRegistrationFormSubmission()"></i></i>
             </div>
         </div>
     </header>
@@ -131,6 +133,15 @@
             }
 
         });
+function checkRegistrationFormSubmission() {
+            const userData = JSON.parse(localStorage.getItem("userData"));
+            if(userData){
+                window.location.href = 'profile.html';
+            }
+            else{
+                window.location.href = 'login.html'
+            }
+        }
     </script>
 </body>
 

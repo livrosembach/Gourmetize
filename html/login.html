@@ -6,36 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="..\css\pages\login.css">
-    <title>Gourmetize</title>
+    <link rel="shortcut icon" type="image/png" href="../imagens/shortcut_icon.ico">
+<title>Gourmetize</title>
+<title>Gourmetize</title>
 </head>
 
 <body>
-    <div class="form">
-        <form action="profile.html">
-            <div class="exitIcon">
-                <button type="button" class="exitIcon" onclick="location.href='index.html'"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <h1 class="mainFont mainColor">Acessar o Sistema</h1>
-            <div class="group">
-                <div class="formGroup">
-                    <label for="email" class="secondFont secondColor">Email:</label>
-                    <input name="email" id="email" type="email">
+    <body>
+        <div class="form">
+            <form action="profile.html">
+                <div class="exitIcon">
+                    <button type="button" class="exitIcon" onclick="location.href='index.html'"><i
+                            class="fa-solid fa-xmark"></i></button>
                 </div>
-                <div class="formGroup">
-                    <label for="password" class="secondFont secondColor">Senha:</label>
-                    <input name="password" id="password" type="password">
+                <h1 class="mainFont mainColor">Acessar o Sistema</h1>
+                <div class="group">
+                    <div class="formGroup">
+                        <label for="email" class="secondFont secondColor">Email:</label>
+                        <input name="email" id="email" type="email" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="password" class="secondFont secondColor">Senha:</label>
+                        <input name="password" id="password" type="password" required>
+                    </div>
+                    <p id="errorMessage" class="secondFont mainColor" style="display: none;">Por favor, registre-se antes de fazer login.</p>
+                    <div class="button">
+                        <button type="submit">Entrar</button>
+                    </div>
+                    <a href="register.html" class="secondFont mainColor">Novo por aqui? Cadastre-se!</a>
                 </div>
-                <div class="button">
-                    <button type="submit">Entrar</button>
-                </div>
-                <a href="register.html" class="secondFont mainColor">Novo por aqui? Cadastre-se!</a>
-            </div>
-        </form>
-    </div>
-    <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
-            class="fa fa-comments"></i>
-    </a>
+            </form>
+        </div>
+        <a href="mailto:gourmetize@pucpr.edu.br" class="supportButton" title="Contact Gourmetize Support"><i
+                class="fa fa-comments"></i>
+        </a>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const userData = JSON.parse(localStorage.getItem('userData'));
+            if (!userData) {
+                document.getElementById('errorMessage').style.display = 'block';
+            } else {
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                if (email === userData.email && password === userData.password) {
+                    window.location.href = 'profile.html';
+                } else {
+                    document.getElementById('errorMessage').textContent = 'Email ou senha incorretos.';
+                    document.getElementById('errorMessage').style.display = 'block';
+                }
+            }
+        });
+    </script>
 </body>
-
 </html>
+

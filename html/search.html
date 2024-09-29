@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="imagens/image.ico">
+    <script src="https://kit.fontawesome.com/a97e2a6b17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\pages\search.css">
+    <link rel="shortcut icon" type="image/png" href="../imagens/shortcut_icon.ico">
+<title>Gourmetize</title>
+<title>Gourmetize</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="../imagens/logo_goumetize.jpeg" id="logo" alt="logo">
+            <nav id="navBar" class="menuItems">
+                <ul class="ulItems">
+                    <li><a href="index.html" class="menuNav secondColor secondFont">Home</a></li>
+                    <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
+                    <li><a href="aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="icons mainColor">
+                <i id="menuButton" class="fa-solid fa-bars colorIcons"></i>
+                <i class="fa-solid fa-circle-user colorIcons" onclick="checkRegistrationFormSubmission()"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="center-search">
+            <div class="search-container">
+                <div id="search">
+                    <form id="form_search">
+                        <input type="text" id="text_search" />
+                        <button type="submit" onsubmit="parmegiana()"><i class="fa-solid fa-magnifying-glass mainColor"></i></button>
+                    </form>
+                </div>
+                <h1>Filtragem de Busca</h1>
+                <div class="filters-group">
+                    <div class="filter-group">
+                        <h4>Tipos de Culinária</h4>
+                        <button class="button-filter">Italiana</button>
+                        <button class="button-filter">Japonesa</button>
+                        <button class="button-filter">Chinesa</button>
+                        <button class="button-filter">Portuguesa</button>
+                        <button class="button-filter">Mexicana</button>
+                        <button class="button-filter">Brasileira</button>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Eventos</h4>
+                        <button class="button-filter">Aniversário</button>
+                        <button class="button-filter">Reuniões</button>
+                        <button class="button-filter">Dia dos Namorados</button>
+                        <button class="button-filter">Música ao Vivo</button>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Outros</h4>
+                        <button class="button-filter">Surpreenda-me</button>
+                        <button class="button-filter">Pet-Friendly</button>
+                        <button class="button-filter">Faixa Etária</button>
+                        <button class="button-filter">Preços</button>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Preços</h4>
+                        <button class="button-filter">Até R$50,00</button>
+                        <button class="button-filter">R$50 - R$100</button>
+                        <button class="button-filter">R$100 - R$200</button>
+                        <button class="button-filter">R$200 - R$300</button>
+                        <button class="button-filter">Acima de R$300</button>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Proximidade</h4>
+                        <button class="button-filter">Até 1km</button>
+                        <button class="button-filter">1km - 3km</button>
+                        <button class="button-filter">3km - 5km</button>
+                        <button class="button-filter">5km - 10km</button>
+                        <button class="button-filter">10km - 50km</button>
+                        <button class="button-filter">50km +</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const nav = document.getElementById("navBar");
+            const computedStyle = window.getComputedStyle(nav);
+            const display = computedStyle.display;
+
+            if (display === "none") {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+            }
+
+        });
+        function checkRegistrationFormSubmission() {
+            const userData = JSON.parse(localStorage.getItem("userData"));
+            if (userData) {
+                window.location.href = 'profile.html';
+            }
+            else {
+                window.location.href = 'login.html'
+            }
+        }
+
+        document.querySelectorAll(".button-filter").forEach(function clicked(button) {
+            button.addEventListener("click", function () {
+                this.classList.toggle("clicked");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("sentforms")) {
+                document.querySelectorAll(".perfil").forEach(function () {
+                    var img = document.getElementById("button-login")
+                    if (img.src.includes("imagens/button_login")) {
+                        img.src = "imagens/login.png";
+                    }
+                    img.classList.toggle("reverse");
+                })
+            }
+        })
+        document.getElementById("form_search").addEventListener("submit", function parmegiana(){
+            event.preventDefault();
+            var input_form = document.getElementById("text_search").value.toLowerCase();
+
+            if (input_form == "parmegiana"){
+                window.location.href = "parmegiana.html"
+            }
+            else {
+                this.submit();
+            }
+        })
+
+    </script>
+</body>
+
+</html>

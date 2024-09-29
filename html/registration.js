@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
             registration(event); 
         });
     });
-    
 
     backButtons.forEach(button => {
         button.addEventListener("click", function (event) {
@@ -90,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         if (currentGroup === 3) {
-            if (!username | !password || !confirmPassword) {
+            if (!username || !password || !confirmPassword) {
                 showError("#requiredFOG");
             } else {
                 hideError("#requiredFOG");
@@ -116,18 +115,32 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     
-    
         if (valid) {
             if (currentGroup === groups.length - 1) {
+                // Store user data in localStorage
+                const userData = {
+                    cpf,
+                    email,
+                    name,
+                    phone,
+                    birthdate,
+                    cep,
+                    address,
+                    houseNum,
+                    complement,
+                    username,
+                    password
+                };
+                localStorage.setItem("userData", JSON.stringify(userData));
+
                 document.querySelector("form").submit();
-                alert("Cadastro finalizado com sucesso!")
+                alert("Cadastro finalizado com sucesso!");
                 window.location.href = "login.html"; 
             } else {
                 goToNextGroup(); 
             }
         }
     }
-    
     
     document.querySelector("form").addEventListener("submit", function (event) {
         registration(event);

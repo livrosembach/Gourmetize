@@ -79,10 +79,6 @@ input {
 }
 
 
-.button{
-    background-color: transparent;
-}
-
 a{
     background-color: transparent;
     font-size: 0.8rem;
@@ -116,4 +112,7 @@ a{
     z-index: 1;
 }
 
+i{
+    background-color: transparent;
+}
 
