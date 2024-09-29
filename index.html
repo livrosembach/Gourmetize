@@ -17,8 +17,8 @@
             <nav id="navBar" class="menuItems">
                 <ul class="ulItems">
                     <li><a href="index.html" class="menuNav secondColor secondFont">Home</a></li>
-                    <li><a href="restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
-                    <li><a href="aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
+                    <li><a href="html/restaurants.html" class="menuNav secondColor secondFont">Restaurantes</a></li>
+                    <li><a href="html/aboutUs.html" class="menuNav secondColor secondFont">Sobre Nós</a></li>
                 </ul>
             </nav>
             <div class="icons mainColor">
@@ -66,10 +66,10 @@
         function checkRegistrationFormSubmission() {
             const userData = JSON.parse(localStorage.getItem("userData"));
             if (userData) {
-                window.location.href = 'profile.html';
+                window.location.href = 'html/profile.html';
             }
             else {
-                window.location.href = 'login.html'
+                window.location.href = 'html/login.html'
             }
         }
 
